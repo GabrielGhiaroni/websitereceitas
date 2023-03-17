@@ -2,7 +2,7 @@
 ### Recipes Website 🥗🍴
 
 ### Projeto criado utilizando React.js, TailwindCSS e React Router.
-#### Project built with Reac.js, TailwindCSS & React Router.
+#### Project built with React.js, TailwindCSS & React Router.
 
 
 ### Acompanhe a evolução do projeto através do link abaixo:
