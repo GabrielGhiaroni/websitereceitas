@@ -1,5 +1,5 @@
-# Website Receitas
-## Recipes Website
+# Website Receitas 🥗🍴
+### Recipes Website 🥗🍴
 
 ### Projeto criado utilizando React.js, TailwindCSS e React Router.
 #### Project built with Reac.js, TailwindCSS & React Router.
