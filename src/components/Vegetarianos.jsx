@@ -32,8 +32,8 @@ const Vegetarianos = () => {
     };
   return (
     <div>
-        <h3 className='py-4'>{tituloVegetarianos}</h3>
-             <div>
+        <h3 className='ml-4 py-4'>{tituloVegetarianos}</h3>
+             <div className='mx-4'>
                 <Swiper
                 modules={[Navigation, Pagination]}
                 navigation={{
@@ -43,16 +43,16 @@ const Vegetarianos = () => {
                 }}
                 loop={true}
                 speed={800}
-                slidesPerView={3}
                 className='meuSwiper'
+                slidesPerView={3}
                 >
                     {
                         vegetarianos.map((receitas, index) => {
                                 return (
-                                        <SwiperSlide className='swiperSlide'>
-                                            <div key={index} className='min-h-[25rem] relative flex justify-center items-center'>
-                                                <p className='absolute z-10 text-white max-w-[300px] text-center font-semibold text-base'>{receitas.title}</p>
-                                                <img src={receitas.image} alt={receitas.title} className='rounded-2xl w-[450px] object-cover absolute contrast-50'/>
+                                        <SwiperSlide className='swiperSlide mx-1'>
+                                            <div key={index} className='min-h-[120px] w-[100%] relative flex justify-center items-center'>
+                                                <p className='p-2 absolute z-10 text-white text-center font-medium text-sm'>{receitas.title}</p>
+                                                <img src={receitas.image} alt={receitas.title} className='rounded-2xl h-[120px] w-[450px] object-cover absolute contrast-50'/>
                                             </div>
                                         </SwiperSlide>
                                 )

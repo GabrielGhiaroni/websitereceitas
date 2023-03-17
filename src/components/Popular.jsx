@@ -34,7 +34,7 @@ const Popular = () => {
 
   return (
     <div>
-        <h3 className='py-4'>{tituloPopulares}</h3>
+        <h3 className='ml-4 py-4'>{tituloPopulares}</h3>
             <div className='mx-4'>
                 <Swiper
                 modules={[Navigation, Pagination]}
@@ -47,14 +47,13 @@ const Popular = () => {
                 loop={true}
                 className='meuSwiper'
                 slidesPerView={3}
-                pagination={{clickable: true}}
                 >
                     {
                         populares.map((receitas, index) => {
                                 return (
                                         <SwiperSlide className='swiperSlide mx-1'>
                                             <div key={index} className='mb-10 min-h-[120px] w-[100%] relative flex justify-center items-center'>
-                                                <p className='p-2 absolute z-10 text-white text-center text-sm'>{receitas.title}</p>
+                                                <p className='p-2 absolute z-10 text-white text-center font-medium text-sm'>{receitas.title}</p>
                                                 <img src={receitas.image} alt={receitas.title} className='rounded-2xl h-[120px] w-[450px] object-cover absolute contrast-50'/>
                                             </div>
                                         </SwiperSlide>
