@@ -34,8 +34,8 @@ const Popular = () => {
 
   return (
     <div>
-        <h3>{tituloPopulares}</h3>
-             <div className='my-8'>
+        <h3 className='py-4'>{tituloPopulares}</h3>
+            <div className='mx-4'>
                 <Swiper
                 modules={[Navigation, Pagination]}
                 navigation={{
@@ -44,17 +44,18 @@ const Popular = () => {
                 disabledClass: 'disabled_swiper_button'
                 }}
                 speed={800}
-                slidesPerView={4}
                 loop={true}
                 className='meuSwiper'
+                slidesPerView={3}
+                pagination={{clickable: true}}
                 >
                     {
                         populares.map((receitas, index) => {
                                 return (
-                                        <SwiperSlide className='swiperSlide mx-4'>
-                                            <div key={index} className='min-h-[25rem] relative flex justify-center items-center'>
-                                                <p className='absolute z-10 text-white max-w-[300px] text-center font-semibold text-base'>{receitas.title}</p>
-                                                <img src={receitas.image} alt={receitas.title} className='rounded-2xl w-[450px] object-cover absolute contrast-50'/>
+                                        <SwiperSlide className='swiperSlide mx-1'>
+                                            <div key={index} className='mb-10 min-h-[120px] w-[100%] relative flex justify-center items-center'>
+                                                <p className='p-2 absolute z-10 text-white text-center text-sm'>{receitas.title}</p>
+                                                <img src={receitas.image} alt={receitas.title} className='rounded-2xl h-[120px] w-[450px] object-cover absolute contrast-50'/>
                                             </div>
                                         </SwiperSlide>
                                 )
@@ -63,7 +64,7 @@ const Popular = () => {
                         }
                 </Swiper>
             </div>
-    </div>
+        </div>
   )
 }
 

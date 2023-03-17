@@ -32,8 +32,8 @@ const Vegetarianos = () => {
     };
   return (
     <div>
-        <h3>{tituloVegetarianos}</h3>
-             <div className='my-8'>
+        <h3 className='py-4'>{tituloVegetarianos}</h3>
+             <div>
                 <Swiper
                 modules={[Navigation, Pagination]}
                 navigation={{
@@ -49,7 +49,7 @@ const Vegetarianos = () => {
                     {
                         vegetarianos.map((receitas, index) => {
                                 return (
-                                        <SwiperSlide className='swiperSlide mx-4'>
+                                        <SwiperSlide className='swiperSlide'>
                                             <div key={index} className='min-h-[25rem] relative flex justify-center items-center'>
                                                 <p className='absolute z-10 text-white max-w-[300px] text-center font-semibold text-base'>{receitas.title}</p>
                                                 <img src={receitas.image} alt={receitas.title} className='rounded-2xl w-[450px] object-cover absolute contrast-50'/>
