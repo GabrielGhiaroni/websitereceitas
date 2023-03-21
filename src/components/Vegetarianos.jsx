@@ -32,7 +32,7 @@ const Vegetarianos = () => {
     };
   return (
     <div>
-        <h3 className='ml-4 py-4'>{tituloVegetarianos}</h3>
+        <h3 className='ml-4 py-4 font-bold'>{tituloVegetarianos}</h3>
              <div className='mx-4'>
                 <Swiper
                 modules={[Navigation, Pagination]}
