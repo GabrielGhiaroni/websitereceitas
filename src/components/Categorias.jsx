@@ -12,15 +12,15 @@ const Categorias = () => {
             <FaPizzaSlice />
             <h4>{italiana}</h4>
         </NavLink>
-        <NavLink to={'/cuisine/Thai'} className='flex flex-col items-center'>
+        <NavLink to={'/cuisine/American'} className='flex flex-col items-center'>
             <FaHamburger />
             <h4>{americana}</h4>
         </NavLink>
-        <NavLink to={'/cuisine/Japanese'} className='flex flex-col items-center'>
+        <NavLink to={'/cuisine/Thai'} className='flex flex-col items-center'>
             <GiNoodles />
             <h4>{tailandesa}</h4>
         </NavLink>
-        <NavLink className='flex flex-col items-center'>
+        <NavLink to={'/cuisine/Japanese'} className='flex flex-col items-center'>
             <GiChopsticks />
             <h4>{japonesa}</h4>
         </NavLink>
